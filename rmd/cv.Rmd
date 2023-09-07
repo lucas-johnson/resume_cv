@@ -1,0 +1,157 @@
+---
+name: Lucas
+surname: Johnson
+# position: "Ph.D. Candidate"
+# address: "State University of New York College of Environmental Science and Forestry"
+phone: +1 315-345-4713
+www: lucaskjohnson.com
+email: lucas.k.johnson03@gmail.com
+twitter: lucaskjohnson03
+github: lucas-johnson
+linkedin: lucaskjohnson
+date: "`r format(Sys.time(), '%B %Y')`"
+output:
+  vitae::moderncv:
+    theme: banking
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+# Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+    "Doctor of Philosophy in Environmental Science", "2019 - Present", "State University College of Environmental Science and Forestry", "Syracuse, NY",
+  "Bachelor of Science in Computer Science", "2013-2017", "Tufts University", "Boston, Massachusetts",
+
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Publications
+
+## In Review
+
+```{r}
+bibliography_entries("preprints.bib") %>%
+  arrange(desc(issued), author$family)
+```
+
+## Peer-Reviewed Publications
+
+```{r}
+
+bibliography_entries("publications.bib") %>%
+  arrange(desc(issued), author$family)
+```
+
+## Book Chapters
+
+```{r}
+bibliography_entries("chapters.bib") %>%
+  arrange(desc(issued), author$family)
+```
+
+# Conference Activity
+
+## Invited Talks
+```{r}
+library(tibble)
+tribble(
+  ~ Year, ~ BeforeMe, ~ Me, ~ AfterMe , ~ Title, ~ Details,
+  "2022", "", "Lucas K. Johnson", "Michael J. Mahoney, and Colin M. Beier", "Historical Time Series Biomass Modeling: To Train on Plots or Pixels?", "FIA Science Stakeholder Meeting (Virtual)",
+
+) %>% 
+  brief_entries(glue::glue("<BeforeMe> \\textbf{<Me>} <AfterMe>. <Title> <Details>", 
+                           .open = "<", 
+                           .close = ">"), 
+                Year, 
+                .protect = FALSE)
+```
+
+## Contributed Talks
+```{r}
+library(tibble)
+tribble(
+  ~ Year, ~ BeforeMe, ~ Me, ~ AfterMe , ~ Title, ~ Details,
+  "2022", "", "Lucas K. Johnson, ", "Michael J. Mahoney, and Colin M. Beier", "A Map-based Stock Change Approach for Fine-scale Biomass and Carbon Accounting in NYS.", "Forest Ecosystem Monitoring Cooperateive Conference, Burlington, VT",
+  "2022", "", "Lucas K. Johnson, ", "Michael J. Mahoney, and Colin M. Beier", "Historical Time Series Biomass Modeling: To Train on Plots or Pixels?", "American Geophysical Union Fall Meeting (Virtual)",
+  "2022", "Michael J. Mahoney, ", "Lucas K. Johnson, ", "and Colin M. Beier", "Detecting regenerating forestland at a landscape level", "Ecological Society of America and Canadian Society for Ecology and Evolution Joint Annual Meeting, Montreal, Quebec, Canada",
+  "2022", "", "Lucas K. Johnson, ", "Michael J. Mahoney, Eddie Bevilacqua, and Colin M. Beier", "Filtering ground noise from LiDAR returns produces inferior models of forest aboveground biomass", "North American Forest Ecology Workshop, Sault Ste Marie, Ontario (Virtual)",
+  "2021", "", "Lucas K. Johnson, ", "Michael J. Mahoney, Eddie Bevilacqua, and Colin M. Beier", "Broad-scale forest biomass mapping: generating contiguous high-resolution predictions using a spatio-temporal patchwork of LiDAR coverages across a mixed-use landscape", "American Geophysical Union Fall Meeting (Virtual)",
+  "2021", "", "Lucas K. Johnson, ", "Michael J. Mahoney, and Colin M. Beier", "Greening Up Before Growing Up: Challenges in Modeling Forest Biomass Recovery Post-Harvest Using Satellite Imagery", "Society of American Foresters National Convention (Virtual)",
+) %>% 
+  brief_entries(glue::glue("<BeforeMe> \\textbf{<Me>} <AfterMe>. <Title> <Details>", 
+                           .open = "<", 
+                           .close = ">"), 
+                Year, 
+                .protect = FALSE)
+```
+
+# Experience
+
+```{r}
+tribble(
+  ~ When, ~ Group, ~ Role, ~ Details,
+  "2019 - Present", "Climate and Applied Forest Research Institute", "Research Assistant", "",
+  "2017 - 2019", "Lightkeeper, LLC",
+  "Data Engineer",
+  "Developed internal data management tools and software in python", 
+) %>% 
+  brief_entries(glue::glue(" \\textbf{<Group>} <Role>. \\newline{} <Details>",
+                           .open = "<", 
+                           .close = ">"), 
+                When, 
+                .protect = FALSE)
+```
+
+# Service to the Profession
+```{r}
+tribble(
+  ~ When, ~ Title, ~ Details,
+  "2023", "Reviewer:", "Journal of Applied Earth Observation and Geoinformation",
+  "2023", "Reviewer:", "Forest Ecology and Management",
+) %>% 
+  brief_entries(glue::glue("\\textbf{<Title>} <Details>", 
+                           .open = "<", 
+                           .close = ">"), 
+                When, 
+                .protect = FALSE)
+```
+
+# Community Service
+
+```{r}
+# Community Involvement/Outreach. [Optional.]  This includes work with libraries and schools, public lectures, etc.
+tribble(
+  ~ When, ~ Group, ~ Role, ~ Details,
+  "July 2020 - July 2021", "Code for Burlington - Courtbot Project", 
+  "Technical Lead (Volunteer)", 
+  "A free service providing text message notifications for court appearances."
+) %>% 
+  brief_entries(glue::glue(" \\textbf{<Group>} <Role>. \\newline{} <Details>",
+                           .open = "<", 
+                           .close = ">"), 
+                When, 
+                .protect = FALSE)
+```
+
+# Affiliations
+
+```{r}
+tribble(
+  ~ When, ~ What, ~Who,
+  "2021 - Present", "American Geophyiscal Union", "Member",
+  "2021 - Present", "NYS GIS Association", "Member",
+) %>% 
+  brief_entries(glue::glue("\\textbf{<What>}. <Who>", 
+                           .open = "<", 
+                           .close = ">"), 
+                When, 
+                .protect = FALSE)
+```
