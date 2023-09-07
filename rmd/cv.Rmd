@@ -97,13 +97,11 @@ tribble(
 
 ```{r}
 tribble(
-  ~ When, ~ Group, ~ Role, ~ Details,
-  "2019 - Present", "Climate and Applied Forest Research Institute", "Research Assistant", "",
-  "2017 - 2019", "Lightkeeper, LLC",
-  "Data Engineer",
-  "Developed internal data management tools and software in python", 
+  ~ When, ~ Group, ~ Details,
+  "2019 - Present", "Climate and Applied Forest Research Institute (SUNY ESF)", "\\textbf{Research Assistant}",
+  "2017 - 2019", "Lightkeeper, LLC", "\\textbf{Data Engineer}. Developed internal data management tools and software in python", 
 ) %>% 
-  brief_entries(glue::glue(" \\textbf{<Group>} <Role>. \\newline{} <Details>",
+  brief_entries(glue::glue(" \\textbf{<Group>} \\newline{} <Details>",
                            .open = "<", 
                            .close = ">"), 
                 When, 
