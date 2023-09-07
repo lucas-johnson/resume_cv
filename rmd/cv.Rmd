@@ -64,7 +64,7 @@ bibliography_entries("chapters.bib") %>%
 library(tibble)
 tribble(
   ~ Year, ~ BeforeMe, ~ Me, ~ AfterMe , ~ Title, ~ Details,
-  "2022", "", "Lucas K. Johnson", "Michael J. Mahoney, and Colin M. Beier", "Historical Time Series Biomass Modeling: To Train on Plots or Pixels?", "FIA Science Stakeholder Meeting (Virtual)",
+  "2022", "", "Lucas K. Johnson, ", "Michael J. Mahoney, and Colin M. Beier", "Historical Time Series Biomass Modeling: To Train on Plots or Pixels?", "FIA Science Stakeholder Meeting (Virtual)",
 
 ) %>% 
   brief_entries(glue::glue("<BeforeMe> \\textbf{<Me>} <AfterMe>. <Title> <Details>", 
