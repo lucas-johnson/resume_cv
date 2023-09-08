@@ -26,7 +26,7 @@ library(vitae)
 library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where,
-    "Doctor of Philosophy in Environmental Science", "2019 - Present", "State University College of Environmental Science and Forestry", "Syracuse, NY",
+    "Doctor of Philosophy in Environmental Science", "2019 - Present", "State University College of Environmental Science and Forestry", "Syracuse, New York",
   "Bachelor of Science in Computer Science", "2013-2017", "Tufts University", "Boston, Massachusetts",
 
 ) %>% 
