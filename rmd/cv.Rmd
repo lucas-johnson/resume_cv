@@ -158,6 +158,7 @@ tribble(
   ~ When, ~ Title, ~ Details,
   "2023", "Reviewer:", "Journal of Applied Earth Observation and Geoinformation",
   "2023", "Reviewer:", "Forest Ecology and Management",
+  "2023", "Reviewer:", "PNAS Nexus",
   "2023", "Workshop Assistant:", "Foundations of Scientific Computing at SUNY ESF",
   "2022", "Workshop Assistant:", "Foundations of Scientific Computing at SUNY ESF"
 ) %>% 
