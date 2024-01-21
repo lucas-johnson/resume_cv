@@ -6,9 +6,9 @@ surname: Johnson
 phone: +1 315-345-4713
 www: lucaskjohnson.com
 email: lucas.k.johnson03@gmail.com
-twitter: lucaskjohnson03
+# twitter: lucaskjohnson03
 github: lucas-johnson
-# linkedin: lucaskjohnson
+linkedin: lucaskjohnson
 date: "`r format(Sys.time(), '%B %Y')`"
 output:
   vitae::moderncv:
