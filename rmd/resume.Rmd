@@ -1,0 +1,130 @@
+---
+name: Lucas
+surname: Johnson
+# position: "Ph.D. Candidate"
+# address: "State University of New York College of Environmental Science and Forestry"
+phone: +1 315-345-4713
+www: lucaskjohnson.com
+email: lucas.k.johnson03@gmail.com
+twitter: lucaskjohnson03
+github: lucas-johnson
+# linkedin: lucaskjohnson
+date: "`r format(Sys.time(), '%B %Y')`"
+output:
+  vitae::moderncv:
+    theme: banking
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tibble)
+
+# Copied code from Mike Mahoney
+make_detailed_section <- function(..., order = c(3, 2, 1, 4), detailVector = "Details", bulletVector = "Bullets", protect = TRUE) { 
+  args <- list(...)
+  if (length(args) == 0) stop("Function requires arguments")
+  
+  for (i in length(args)) {
+    if (!is.list(args[[i]])) stop(paste("Argument", i, "is not a list."))
+  }
+  
+  df <- vector("list")
+  
+  for(i in 1:length(args)) {
+    df[[i]] <- tibble(
+      What = args[[i]][[detailVector]][[order[[1]]]], 
+      When = args[[i]][[detailVector]][[order[[2]]]], 
+      With = args[[i]][[detailVector]][[order[[3]]]], 
+      Where = args[[i]][[detailVector]][[order[[4]]]], 
+      Why = args[[i]][[bulletVector]][seq_along(args[[i]][[bulletVector]])]
+    )
+  }
+  
+  do.call(rbind.data.frame, df) %>%
+    detailed_entries(What, When, With, Where, Why, .protect = protect)
+  
+}
+```
+
+
+# Work Experience
+```{r}
+CAFRI <- vector("list")
+CAFRI$Details <- c("Research Assistant", "August 2019 - Present", "Climate and Applied Forest Research Institute", "Syracuse, NY")
+CAFRI$Bullets <- c(
+  "Developed a forest carbon mapping and monitoring system for the New York State Department of Environmental Conservation in support of net-zero emissions goals defined under the Climate Leadership and Community Protection Act",
+   "Contributed writing, code, and statistical/spatial analysis to technical reports for state agencies and external collaborators",
+  "Implemented R workflows to process, clean, and ingest > 30 TB of LiDAR point clouds and nearly 2 TB of Landsat imagery and derived indices",
+  "Established cloud computing infrastructure (AWS), geospatial databases, and data sharing software",
+  "Provided mentorship and technical support to grad students"
+)
+
+LK <- vector("list")
+LK$Details <- c("Data Engineer", "August 2017 - July 2019", "Lightkeeper, LLC", "Boston, MA")
+LK$Bullets <- c(
+  "Refactored ETL pipeline, establishing best practices and standard tools for customer-specific scripts",
+  "Designed and developed internal tools to track feature usage and identify computational bottlenecks",
+  "Implemented slack integrations to streamline requests from client support team",
+  "Supervised and mentored a summer intern, providing project support and oversight to ensure success"
+)
+
+make_detailed_section(
+  CAFRI,
+  LK
+)
+```
+
+# Education
+
+```{r education}
+esf <- vector("list")
+esf$Details <- c("Doctor of Philosophy in Environmental Science", 
+                 "August 2019 - Present", 
+                 "SUNY College of Environmental Science and Forestry", 
+                 "Syracuse, NY")
+esf$Bullets <- c(
+  "Dissertation: A Forest Carbon Monitoring System for New York State"
+)
+
+tufts <- vector("list")
+tufts$Details <- c("Bachelor of Science in Computer Science", 
+                   "August 2013 - May 2017",
+                   "Tufts University", 
+                   "Medford, MA")
+tufts$Bullets <- c(NA)
+
+make_detailed_section(esf, tufts)
+
+```
+
+# Volunteer Positions
+
+```{r}
+code_for_btv <- vector("list")
+
+code_for_btv$Details <- c("Technical Lead: Courtbot project", "July 2020 - July 2021", "Code for Burlington", "Remote")
+code_for_btv$Bullets <- c(
+  "A free service providing text message notifications for court appearances"
+)
+
+workshops <- vector("list")
+workshops$Details <- c("Workshop Assistant", "December 2022, 2023", "Foundations of Scientific Computing", "Syracuse, NY")
+# workshops$Bullets <- c("Provided technical support for workshop attendees")
+workshops$Bullets <- c(NA)
+
+make_detailed_section(code_for_btv, workshops)
+# make_detailed_section(code_for_btv)
+```
+
+# Skills
+
+```{r}
+
+tribble(
+  ~ Group, ~ List,
+  "Programming languages", "R, Python, SQL, and Linux shell languages",
+  "GIS", "QGIS, ArcGIS, GDAL, Google Earth Engine, R spatial ecosystem"
+  ) %>% 
+brief_entries(List, Group, .protect = FALSE)
+```
