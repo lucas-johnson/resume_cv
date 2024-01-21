@@ -75,6 +75,26 @@ make_detailed_section(
 )
 ```
 
+# Volunteer Positions
+
+```{r}
+code_for_btv <- vector("list")
+
+code_for_btv$Details <- c("Technical Lead: Courtbot project", "July 2020 - July 2021", "Code for Burlington", "Remote")
+code_for_btv$Bullets <- c(
+  "A free service providing text message notifications for court appearances"
+)
+
+workshops <- vector("list")
+workshops$Details <- c("Workshop Assistant", "December 2022, 2023", "Foundations of Scientific Computing", "Syracuse, NY")
+# workshops$Bullets <- c("Provided technical support for workshop attendees")
+workshops$Bullets <- c(NA)
+
+make_detailed_section(code_for_btv, workshops)
+# make_detailed_section(code_for_btv)
+```
+
+
 # Education
 
 ```{r education}
@@ -96,25 +116,6 @@ tufts$Bullets <- c(NA)
 
 make_detailed_section(esf, tufts)
 
-```
-
-# Volunteer Positions
-
-```{r}
-code_for_btv <- vector("list")
-
-code_for_btv$Details <- c("Technical Lead: Courtbot project", "July 2020 - July 2021", "Code for Burlington", "Remote")
-code_for_btv$Bullets <- c(
-  "A free service providing text message notifications for court appearances"
-)
-
-workshops <- vector("list")
-workshops$Details <- c("Workshop Assistant", "December 2022, 2023", "Foundations of Scientific Computing", "Syracuse, NY")
-# workshops$Bullets <- c("Provided technical support for workshop attendees")
-workshops$Bullets <- c(NA)
-
-make_detailed_section(code_for_btv, workshops)
-# make_detailed_section(code_for_btv)
 ```
 
 # Skills
