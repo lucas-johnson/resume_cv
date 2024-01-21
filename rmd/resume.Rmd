@@ -124,8 +124,8 @@ make_detailed_section(esf, tufts)
 
 tribble(
   ~ Group, ~ List,
-  "Programming languages", "R, Python, SQL, and Linux shell languages",
-  "GIS", "QGIS, ArcGIS, GDAL, Google Earth Engine, R spatial ecosystem"
+  "Programming", "R, Python, SQL, git, and Linux shell languages",
+  "GIS", "QGIS, ArcGIS, GDAL, Google Earth Engine, and the R spatial ecosystem"
   ) %>% 
 brief_entries(List, Group, .protect = FALSE)
 ```
