@@ -53,7 +53,7 @@ make_detailed_section <- function(..., order = c(3, 2, 1, 4), detailVector = "De
 CAFRI <- vector("list")
 CAFRI$Details <- c("Research Assistant", "August 2019 - Present", "Climate and Applied Forest Research Institute", "Syracuse, NY")
 CAFRI$Bullets <- c(
-  "Developed a forest carbon mapping and monitoring system for the New York State Department of Environmental Conservation in support of net-zero emissions goals defined under the Climate Leadership and Community Protection Act",
+  "Developed a spatial forest carbon assessment for the NYS DEC in support of net-zero emissions goals defined under the Climate Leadership and Community Protection Act",
    "Contributed writing, code, and statistical/spatial analysis to technical reports for state agencies and external collaborators",
   "Implemented R workflows to process, clean, and ingest > 30 TB of LiDAR point clouds and nearly 2 TB of Landsat imagery and derived indices",
   "Established cloud computing infrastructure (AWS), geospatial databases, and data sharing software",
@@ -94,7 +94,6 @@ make_detailed_section(code_for_btv, workshops)
 # make_detailed_section(code_for_btv)
 ```
 
-
 # Education
 
 ```{r education}
@@ -104,7 +103,7 @@ esf$Details <- c("Doctor of Philosophy in Environmental Science",
                  "SUNY College of Environmental Science and Forestry", 
                  "Syracuse, NY")
 esf$Bullets <- c(
-  "Dissertation: A Forest Carbon Monitoring System for New York State"
+  "Dissertation: Mapping forest aboveground biomass stocks and changes to facilitate natural climate solutions in New York State"
 )
 
 tufts <- vector("list")
