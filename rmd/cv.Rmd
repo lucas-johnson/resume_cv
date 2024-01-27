@@ -40,7 +40,7 @@ tribble(
 ```{r eval = TRUE}
 tribble(
   ~ When, ~ BeforeYou, ~ You, ~ AfterYou, ~ Title, ~ Details, ~ url,
-  "2023", "Mahoney, M.J., ", "Johnson, L.K.,", "Silge, J., Frick, H., Kuhn, M., and Beier, C. M. In Review.", "Assessing the performance of spatial cross-validation approaches for models of spatially structured data.", "In review at Environmental Modelling \\& Software", "https://doi.org/10.48550/arXiv.2303.07334"
+  "2023", "Mahoney, M.J., ", "Johnson, L.K.,", "Silge, J., Frick, H., Kuhn, M., and Beier, C. M.", "Assessing the performance of spatial cross-validation approaches for models of spatially structured data.", "In review at Environmental Modelling \\& Software", "https://doi.org/10.48550/arXiv.2303.07334"
   ) %>% 
   brief_entries(glue::glue("<BeforeYou>\\textbf{<You>} <AfterYou> <Title> <Details>. \\url{<url>}", 
                            .open = "<", 
@@ -191,7 +191,7 @@ tribble(
 ```{r}
 tribble(
   ~ When, ~ What, ~Who,
-  "2021 - Present", "American Geophyiscal Union", "Member",
+  "2021 - Present", "American Geophysical Union", "Member",
   "2021 - Present", "NYS GIS Association", "Member",
 ) %>% 
   brief_entries(glue::glue("\\textbf{<What>}. <Who>", 
@@ -199,4 +199,16 @@ tribble(
                            .close = ">"), 
                 When, 
                 .protect = FALSE)
+```
+
+# Skills
+
+```{r}
+
+tribble(
+  ~ Group, ~ List,
+  "Programming", "R, Python, SQL, git, and Linux shell languages",
+  "GIS", "QGIS, ArcGIS, GDAL, Google Earth Engine, and the R spatial ecosystem"
+  ) %>% 
+brief_entries(List, Group, .protect = FALSE)
 ```
