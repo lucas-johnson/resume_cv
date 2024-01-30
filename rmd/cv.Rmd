@@ -25,12 +25,12 @@ library(vitae)
 ```{r}
 library(tibble)
 tribble(
-  ~ Degree, ~ Year, ~ Institution, ~ Where,
-    "Doctor of Philosophy in Environmental Science", "2019 - Present", "State University College of Environmental Science and Forestry", "Syracuse, New York",
-  "Bachelor of Science in Computer Science", "2013-2017", "Tufts University", "Boston, Massachusetts",
+  ~ Degree, ~ Year, ~ Institution, ~ Where, ~ Details,
+    "Doctor of Philosophy in Environmental Science", "Aug 2019 - May 2024 (exp)", "State University College of Environmental Science and Forestry", "Syracuse, New York", "Dissertation: \\textit{Mapping forest aboveground biomass stocks and changes to facilitate natural climate solutions in New York State}",
+  "Bachelor of Science in Computer Science", "Aug 2013 - May 2017", "Tufts University", "Boston, Massachusetts", NA
 
 ) %>% 
-  detailed_entries(Degree, Year, Institution, Where)
+  detailed_entries(Degree, Year, Institution, Where, Details, .protect = FALSE)
 ```
 
 # Publications
@@ -106,7 +106,7 @@ tribble(
 library(tibble)
 tribble(
   ~ Year, ~ BeforeMe, ~ Me, ~ AfterMe , ~ Title, ~ Details,
-  "2023", "Mahoney, M. J., ", "Johnson, L. K., ", "and Beier, C. M", "Consistent Workflows for Assessing Model Performance: Tools and Applications to Natural Climate Solutions.", "American Geophysical Union Fall Meeting, San Francisco, CA",
+  "2023", "Mahoney, M. J., ", "Johnson, L. K., ", "and Beier, C. M.", "Consistent Workflows for Assessing Model Performance: Tools and Applications to Natural Climate Solutions.", "American Geophysical Union Fall Meeting, San Francisco, CA",
   "2023", "Beier, C.M., ", "Johnson, L.K., ", "Mahoney, M.J., Desrochers, M.L, and Domke, G.M.", "An integrated carbon monitoring framework for stock-change GHG inventory at parcel to landscape scales: approach, outputs and applications.", "American Geophysical Union Fall Meeting, San Francisco, CA",
   "2022", "", "Johnson, L.K., ", "Mahoney, M.J., and Beier, C.M.", "A Map-based Stock Change Approach for Fine-scale Biomass and Carbon Accounting in NYS.", "Forest Ecosystem Monitoring Cooperateive Conference, Burlington, VT",
   "2022", "", "Johnson, L.K., ", "Mahoney, M.J., and Beier, C.M.", "Historical Time Series Biomass Modeling: To Train on Plots or Pixels?", "American Geophysical Union Fall Meeting (Virtual)",
@@ -115,7 +115,7 @@ tribble(
   "2021", "", "Johnson, L.K., ", "Mahoney, M.J., Bevilacqua, E., and Beier, C.M.", "Broad-scale forest biomass mapping: generating contiguous high-resolution predictions using a spatio-temporal patchwork of LiDAR coverages across a mixed-use landscape.", "American Geophysical Union Fall Meeting (Virtual)",
   "2021", "", "Johnson, L.K., ", "Mahoney, M.J., and Beier, C.M.", "Greening Up Before Growing Up: Challenges in Modeling Forest Biomass Recovery Post-Harvest Using Satellite Imagery.", "Society of American Foresters National Convention (Virtual)",
 ) %>% 
-  brief_entries(glue::glue("<BeforeMe>\\textbf{<Me>} <AfterMe>. <Title> <Details>", 
+  brief_entries(glue::glue("<BeforeMe>\\textbf{<Me>} <AfterMe> <Title> <Details>", 
                            .open = "<", 
                            .close = ">"), 
                 Year, 
@@ -128,7 +128,7 @@ tribble(
   ~ Year, ~ BeforeMe, ~ Me, ~ AfterMe , ~ Title, ~ Details,
   "2023", "", "Johnson, L.K., ", "Mahoney M.J., Domke, G.M., and Beier, C.M.", "Bridging the Gap Between Pixels and Minimum Estimation Units: Small-Area Uncertainty Estimation with Forest Aboveground Biomass Maps.", "American Geophysical Union Fall Meeting, San Francisco, CA"
 ) %>% 
-  brief_entries(glue::glue("<BeforeMe>\\textbf{<Me>} <AfterMe>. <Title> <Details>", 
+  brief_entries(glue::glue("<BeforeMe>\\textbf{<Me>} <AfterMe> <Title> <Details>", 
                            .open = "<", 
                            .close = ">"), 
                 Year, 
