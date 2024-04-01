@@ -156,6 +156,7 @@ tribble(
 ```{r}
 tribble(
   ~ When, ~ Title, ~ Details,
+  "2024", "Reviewer:", "Carbon Balance and Management",
   "2023", "Reviewer:", "Journal of Applied Earth Observation and Geoinformation",
   "2023", "Reviewer:", "Forest Ecology and Management",
   "2023", "Reviewer:", "PNAS Nexus",
