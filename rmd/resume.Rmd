@@ -99,7 +99,7 @@ make_detailed_section(code_for_btv, workshops)
 ```{r education}
 esf <- vector("list")
 esf$Details <- c("Doctor of Philosophy in Environmental Science", 
-                 "August 2019 - Present", 
+                 "August 2019 - May 2024", 
                  "SUNY College of Environmental Science and Forestry", 
                  "Syracuse, NY")
 esf$Bullets <- c(
