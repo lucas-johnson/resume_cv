@@ -84,6 +84,20 @@ tribble(
                 .protect = FALSE)
 ```
 
+# Awards and Honors
+
+```{r}
+tribble(
+  ~ When, ~ Title, ~ Institution, 
+  "2024", "Outstanding PhD Scholar",  "SUNY ESF Division of Environmental Science"
+) %>% 
+  brief_entries(glue::glue("\\textbf{<Title>} - <Institution>", 
+                           .open = "<", 
+                           .close = ">"), 
+                When, 
+                .protect = FALSE)
+```
+
 # Conference Activity
 
 ## Invited Talks
@@ -157,9 +171,7 @@ tribble(
 tribble(
   ~ When, ~ Title, ~ Details,
   "2024", "Reviewer:", "Carbon Balance and Management",
-  "2023", "Reviewer:", "Journal of Applied Earth Observation and Geoinformation",
-  "2023", "Reviewer:", "Forest Ecology and Management",
-  "2023", "Reviewer:", "PNAS Nexus",
+  "2023", "Reviewer:", "Forest Ecology and Management, Journal of Applied Earth Observation and Geoinformation, PNAS Nexus",
   "2023", "Workshop Assistant:", "Foundations of Scientific Computing at SUNY ESF",
   "2022", "Workshop Assistant:", "Foundations of Scientific Computing at SUNY ESF"
 ) %>% 
