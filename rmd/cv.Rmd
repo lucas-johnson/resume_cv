@@ -55,6 +55,7 @@ tribble(
 ```{r}
 tribble(
   ~ When, ~ BeforeYou, ~ You, ~ AfterYou, ~ Title, ~ Details, ~ url,
+  "2024", "Cranmer, N., Han, T., Chedzoy, B., Smallidge, P. J., Beier, C. M., ", "Johnson, L.K.,", "and Xu, X. 2024.", "Estimating merchantable and non-merchantable wood volume in slash walls using terrestrial and airborne LiDAR.", "Forest Ecology and Management, 569, 122211", "https://doi.org/10.1016/j.foreco.2024.122211",
   "2023", "", "Johnson, L. K.,", "Mahoney, M.J., Desrochers, M. L., and Beier, C. M. 2023.", "Mapping historical forest biomass for stock-change assessments at parcel to landscape scales.", "Forest Ecology and Management, 546, 121348", "https://doi.org/10.1016/j.foreco.2023.121348",
   "2022", "Desrochers, M. L., Tripp, W., Logan, S., Bevilacqua, E., ", "Johnson, L.K.,", "and Beier, C. M. 2022.", "Ground-Truthing Forest Change Detection Algorithms in Working Forests of the US Northeast.", "Journal of Forestry, 120(5), 575–587", "https://doi.org/10.1093/jofore/fvab075",
   "2022", "", "Johnson, L. K.,", "Mahoney, M. J., Bevilacqua, E., Stehman, S. V., Domke, G. M., and Beier, C. M. 2022.", "Fine-resolution landscape-scale biomass mapping using a spatiotemporal patchwork of LiDAR coverages.", "The International Journal of Applied Earth Observation and Geoinformation, 114, 103059", "https://doi.org/10.1016/j.jag.2022.103059",
@@ -156,7 +157,8 @@ tribble(
 ```{r}
 tribble(
   ~ When, ~ Group, ~ Details,
-  "2019 - Present", "Climate and Applied Forest Research Institute (SUNY ESF)", "\\textbf{Research Assistant}. Developed cloud computing infrastructure, geospatial databases, and data sharing software. Contributed writing, code, and statistical/spatial analysis to technical reports",
+  "2024 - Present", "Oregon State University - USFS", "\\textbf{Postdoctoral Scholar}. Quantifying radiative feedbacks associated with the albedo change that results from forest growth, reforestation, and afforestation. Assisting the operationalization of carbon reporting tools based on data from NASA's GEDI mission",
+  "2019 - 2024", "Climate and Applied Forest Research Institute (SUNY ESF)", "\\textbf{Research Assistant}. Developed cloud computing infrastructure, geospatial databases, and data sharing software. Contributed writing, code, and statistical/spatial analysis to technical reports",
   "2017 - 2019", "Lightkeeper, LLC", "\\textbf{Data Engineer}. Developed internal data management tools and software in python", 
 ) %>% 
   brief_entries(glue::glue(" \\textbf{<Group>} \\newline{} <Details>",
