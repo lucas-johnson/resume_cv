@@ -157,7 +157,7 @@ tribble(
 ```{r}
 tribble(
   ~ When, ~ Group, ~ Details,
-  "2024 - Present", "Oregon State University - USFS", "\\textbf{Postdoctoral Scholar}. Quantifying radiative feedbacks associated with the albedo change that results from forest growth, reforestation, and afforestation. Assisting the operationalization of carbon reporting tools based on data from NASA's GEDI mission",
+  "2024 - Present", "Oregon State University", "\\textbf{Postdoctoral Scholar}. Quantifying radiative feedbacks associated with the albedo change that results from forest growth, reforestation, and afforestation. Assisting the operationalization of carbon reporting tools based on data from NASA's GEDI mission",
   "2019 - 2024", "Climate and Applied Forest Research Institute (SUNY ESF)", "\\textbf{Research Assistant}. Developed cloud computing infrastructure, geospatial databases, and data sharing software. Contributed writing, code, and statistical/spatial analysis to technical reports",
   "2017 - 2019", "Lightkeeper, LLC", "\\textbf{Data Engineer}. Developed internal data management tools and software in python", 
 ) %>% 
