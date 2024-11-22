@@ -106,10 +106,11 @@ tribble(
 library(tibble)
 tribble(
   ~ Year, ~ BeforeMe, ~ Me, ~ AfterMe , ~ Title, ~ Details,
+  "2024", "", "Johnson, L.K., ", "Mahoney, M.J., Domke, G.M., and Beier, C.M.", "New allometric models for the USA create a step-change in forest carbon estimation, modeling, and mapping.", "FIA Science Symposium (Virtual)",
   "2022", "", "Johnson, L.K., ", "Mahoney, M.J., and Beier, C.M.", "Historical Time Series Biomass Modeling: To Train on Plots or Pixels?", "FIA Science Stakeholder Meeting (Virtual)",
 
 ) %>% 
-  brief_entries(glue::glue("<BeforeMe>\\textbf{<Me>} <AfterMe>. <Title> <Details>", 
+  brief_entries(glue::glue("<BeforeMe>\\textbf{<Me>} <AfterMe> <Title> <Details>", 
                            .open = "<", 
                            .close = ">"), 
                 Year, 
@@ -121,6 +122,7 @@ tribble(
 library(tibble)
 tribble(
   ~ Year, ~ BeforeMe, ~ Me, ~ AfterMe , ~ Title, ~ Details,
+  "2024", "", "Johnson, L.K., ", "Yang, Z., Erb, A., Domke, G.M., Frescino, T.S., Schaaf, C.B., and Healey, S.P.", "Integrating albedo offsets in reforestation decisions for climate mitigation outcomes in 2050: a case study in the USA.", "FIA Science Symposium (Virtual)",
   "2023", "Mahoney, M. J., ", "Johnson, L. K., ", "and Beier, C. M.", "Consistent Workflows for Assessing Model Performance: Tools and Applications to Natural Climate Solutions.", "American Geophysical Union Fall Meeting, San Francisco, CA",
   "2023", "Beier, C.M., ", "Johnson, L.K., ", "Mahoney, M.J., Desrochers, M.L, and Domke, G.M.", "An integrated carbon monitoring framework for stock-change GHG inventory at parcel to landscape scales: approach, outputs and applications.", "American Geophysical Union Fall Meeting, San Francisco, CA",
   "2022", "", "Johnson, L.K., ", "Mahoney, M.J., and Beier, C.M.", "A Map-based Stock Change Approach for Fine-scale Biomass and Carbon Accounting in NYS.", "Forest Ecosystem Monitoring Cooperateive Conference, Burlington, VT",
@@ -157,7 +159,7 @@ tribble(
 ```{r}
 tribble(
   ~ When, ~ Group, ~ Details,
-  "2024 - Present", "Oregon State University", "\\textbf{Postdoctoral Scholar}. Quantifying radiative feedbacks associated with the albedo change that results from forest growth, reforestation, and afforestation. Assisting the operationalization of carbon reporting tools based on data from NASA's GEDI mission",
+  "2024 - Present", "Oregon State University", "\\textbf{Postdoctoral Scholar}. Quantifying radiative feedbacks associated with the albedo change that results from forest growth, reforestation, and afforestation. Assisting in operationalizing forest carbon reporting tools that leverage data from NASA’s GEDI mission",
   "2019 - 2024", "Climate and Applied Forest Research Institute (SUNY ESF)", "\\textbf{Research Assistant}. Developed cloud computing infrastructure, geospatial databases, and data sharing software. Contributed writing, code, and statistical/spatial analysis to technical reports",
   "2017 - 2019", "Lightkeeper, LLC", "\\textbf{Data Engineer}. Developed internal data management tools and software in python", 
 ) %>% 
