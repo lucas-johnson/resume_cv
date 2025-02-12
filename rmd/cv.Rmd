@@ -6,7 +6,6 @@ surname: Johnson
 phone: +1 315-345-4713
 www: lucaskjohnson.com
 email: lucas.k.johnson03@gmail.com
-twitter: lucaskjohnson03
 github: lucas-johnson
 linkedin: lucaskjohnson
 date: "`r format(Sys.time(), '%B %Y')`"
@@ -40,7 +39,9 @@ tribble(
 ```{r eval = TRUE}
 tribble(
   ~ When, ~ BeforeYou, ~ You, ~ AfterYou, ~ Title, ~ Details, ~ url,
-  "2024", "", "Johnson, L. K.,", "Mahoney, M. J., Domke, G. M., and Beier, C. M.", "New allometric models for the USA create a step-change in forest carbon estimation, modeling, and mapping.", "In review at Remote Sensing of Environment", "https://doi.org/10.48550/arXiv.2405.04507",
+  "2024", "", "Johnson, L. K.,", "Yang, Z., Erb, A., Bright, R. M., Domke, G. M., Frescino, T. S., Schaaf, C. B., Healey, S. P.", "Integrating albedo offsets in reforestation decisions for climate change mitigation outcomes in 2050: a case study in the USA.", "In review at Forest Ecology and Management", "https://zenodo.org/records/14563711",
+  "2024", "", "Johnson, L. K.,", "Domke, G. M., Stehman, S. V., Mahoney, M. J., Beier, C. M.", "From pixels to parcels: flexible practical small-area uncertainty estimation for spatial averages obtained from aboveground biomass maps.", "In review at Remote Sensing of Environment", "https://doi.org/10.48550/arXiv.2412.16403",
+  "2024", "", "Johnson, L. K.,", "Mahoney, M. J., Domke, G. M., and Beier, C. M.", "New allometric models for the USA create a step-change in forest carbon estimation, modeling, and mapping.", "In review at Forest Ecology and Management", "https://doi.org/10.48550/arXiv.2405.04507",
   "2023", "Mahoney, M.J., ", "Johnson, L.K.,", "Silge, J., Frick, H., Kuhn, M., and Beier, C. M.", "Assessing the performance of spatial cross-validation approaches for models of spatially structured data.", "In review at Environmental Modelling \\& Software", "https://doi.org/10.48550/arXiv.2303.07334",
   ) %>% 
   brief_entries(glue::glue("<BeforeYou>\\textbf{<You>} <AfterYou> <Title> <Details>. \\url{<url>}", 
@@ -160,7 +161,7 @@ tribble(
 ```{r}
 tribble(
   ~ When, ~ Group, ~ Details,
-  "2024 - Present", "Oregon State University", "\\textbf{Postdoctoral Scholar}. Quantifying radiative feedbacks associated with the albedo change that results from forest growth, reforestation, and afforestation. Assisting in operationalizing forest carbon reporting tools that leverage data from NASA’s GEDI mission",
+  "2024 - Present", "Oregon State University", "\\textbf{Postdoctoral Scholar}. Investigating how surface albedo change resulting from forest growth, reforestation, and afforestation impact decisions around forest management for climate mitigation. Assisting in operationalizing forest carbon reporting tools that leverage data from NASA’s GEDI mission",
   "2019 - 2024", "Climate and Applied Forest Research Institute (SUNY ESF)", "\\textbf{Research Assistant}. Developed cloud computing infrastructure, geospatial databases, and data sharing software. Contributed writing, code, and statistical/spatial analysis to technical reports",
   "2017 - 2019", "Lightkeeper, LLC", "\\textbf{Data Engineer}. Developed internal data management tools and software in python", 
 ) %>% 

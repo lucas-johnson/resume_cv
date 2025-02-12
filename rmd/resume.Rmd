@@ -1,6 +1,6 @@
 ---
 name: Lucas
-surname: Johnson
+surname: Johnson, Ph.D.
 # position: "Ph.D. Candidate"
 # address: "State University of New York College of Environmental Science and Forestry"
 phone: +1 315-345-4713
@@ -50,13 +50,21 @@ make_detailed_section <- function(..., order = c(3, 2, 1, 4), detailVector = "De
 
 # Work Experience
 ```{r}
+OSU <- vector("list")
+OSU$Details <- c("Postdoctoral Scholar", "August 2024 - Present", "Oregon State University", "Riverdale, UT")
+OSU$Bullets <- c(
+  "Developed a web map application to support the joint consideration of carbon benefits and albedo offsets in tree-planting projects across the conterminous United States",
+  "Decomposing Nepal-wide forest carbon trends with NASA GEDI data to distribute REDD+ payments"
+)
+
 CAFRI <- vector("list")
-CAFRI$Details <- c("Research Assistant", "August 2019 - Present", "Climate and Applied Forest Research Institute", "Syracuse, NY")
+CAFRI$Details <- c("Research Assistant", "August 2019 - August 2024", "Climate and Applied Forest Research Institute", "Syracuse, NY")
 CAFRI$Bullets <- c(
-  "Developed a spatial forest carbon assessment for the NYS DEC in support of net-zero emissions goals defined under the Climate Leadership and Community Protection Act",
-   "Contributed writing, code, and statistical/spatial analysis to technical reports for state agencies and external collaborators",
-  "Implemented R workflows to process, clean, and ingest > 30 TB of LiDAR point clouds and nearly 2 TB of Landsat imagery and derived indices",
-  "Established cloud computing infrastructure (AWS), geospatial databases, and data sharing software",
+  "Developed a forest carbon mapping framework for the NYS DEC supporting net-zero emissions goals",
+  "Communicated research findings in 4 scientific manuscripts and 8 conference presentations",
+  "Contributed writing, code, and statistical/spatial analysis to technical reports for external collaborators",
+  "Implemented R workflows to process > 30 TB of LiDAR point clouds and ~2 TB of Landsat imagery",
+  "Established cloud computing infrastructure (AWS), geospatial databases, and data sharing software", 
   "Provided mentorship and technical support to grad students"
 )
 
@@ -65,33 +73,14 @@ LK$Details <- c("Data Engineer", "August 2017 - July 2019", "Lightkeeper, LLC", 
 LK$Bullets <- c(
   "Refactored ETL pipeline, establishing best practices and standard tools for customer-specific scripts",
   "Designed and developed internal tools to track feature usage and identify computational bottlenecks",
-  "Implemented slack integrations to streamline requests from client support team",
-  "Supervised and mentored a summer intern, providing project support and oversight to ensure success"
+  "Implemented slack integrations to streamline requests from client support team"
 )
 
 make_detailed_section(
+  OSU,
   CAFRI,
   LK
 )
-```
-
-# Volunteer Positions
-
-```{r}
-code_for_btv <- vector("list")
-
-code_for_btv$Details <- c("Technical Lead: Courtbot project", "July 2020 - July 2021", "Code for Burlington", "Remote")
-code_for_btv$Bullets <- c(
-  "A free service providing text message notifications for court appearances"
-)
-
-workshops <- vector("list")
-workshops$Details <- c("Workshop Assistant", "December 2022, 2023", "Foundations of Scientific Computing", "Syracuse, NY")
-# workshops$Bullets <- c("Provided technical support for workshop attendees")
-workshops$Bullets <- c(NA)
-
-make_detailed_section(code_for_btv, workshops)
-# make_detailed_section(code_for_btv)
 ```
 
 # Education
@@ -103,7 +92,7 @@ esf$Details <- c("Doctor of Philosophy in Environmental Science",
                  "SUNY College of Environmental Science and Forestry", 
                  "Syracuse, NY")
 esf$Bullets <- c(
-  "Dissertation: Mapping forest aboveground biomass stocks and changes to facilitate natural climate solutions in New York State"
+  NA
 )
 
 tufts <- vector("list")
@@ -115,6 +104,25 @@ tufts$Bullets <- c(NA)
 
 make_detailed_section(esf, tufts)
 
+```
+
+# Volunteer Positions
+
+```{r}
+code_for_btv <- vector("list")
+
+code_for_btv$Details <- c("Technical Lead: Courtbot project", "July 2020 - July 2021", "Code for Burlington", "Remote")
+code_for_btv$Bullets <- c(
+  NA
+)
+
+workshops <- vector("list")
+workshops$Details <- c("Workshop Assistant", "December 2022, 2023", "Foundations of Scientific Computing", "Syracuse, NY")
+# workshops$Bullets <- c("Provided technical support for workshop attendees")
+workshops$Bullets <- c(NA)
+
+make_detailed_section(code_for_btv, workshops)
+# make_detailed_section(code_for_btv)
 ```
 
 # Skills
