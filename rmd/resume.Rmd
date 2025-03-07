@@ -53,7 +53,7 @@ make_detailed_section <- function(..., order = c(3, 2, 1, 4), detailVector = "De
 OSU <- vector("list")
 OSU$Details <- c("Postdoctoral Scholar", "August 2024 - Present", "Oregon State University", "Riverdale, UT")
 OSU$Bullets <- c(
-  "Developed a web map application to support the joint consideration of carbon benefits and albedo offsets in tree-planting projects across the conterminous United States",
+  "Developed a shiny-live web map to support the joint consideration of carbon benefits and albedo offsets in tree-planting projects across the conterminous United States",
   "Decomposing Nepal-wide forest carbon trends with NASA GEDI data to distribute REDD+ payments"
 )
 
@@ -131,8 +131,8 @@ make_detailed_section(code_for_btv, workshops)
 
 tribble(
   ~ Group, ~ List,
-  "Programming", "R, Python, SQL, git, and Linux shell languages",
-  "GIS", "QGIS, ArcGIS, GDAL, Google Earth Engine, and the R spatial ecosystem"
+  "Programming", "R, Python, SQL, git, AWS, and Linux shell languages",
+  "GIS", "QGIS, ArcGIS, GDAL/OGR, PostGIS, Google Earth Engine, and the R spatial ecosystem"
   ) %>% 
 brief_entries(List, Group, .protect = FALSE)
 ```
