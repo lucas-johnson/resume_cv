@@ -131,7 +131,7 @@ make_detailed_section(code_for_btv, workshops)
 
 tribble(
   ~ Group, ~ List,
-  "Programming", "R, Python, SQL, git, AWS, and Linux shell languages",
+  "Programming", "R, Python, Quarto, SQL, git, and Linux shell languages",
   "GIS", "QGIS, ArcGIS, GDAL/OGR, PostGIS, Google Earth Engine, and the R spatial ecosystem"
   ) %>% 
 brief_entries(List, Group, .protect = FALSE)
