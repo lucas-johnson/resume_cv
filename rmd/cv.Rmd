@@ -1,6 +1,6 @@
 ---
 name: Lucas
-surname: Johnson
+surname: Johnson, Ph.D.
 # position: "Ph.D. Candidate"
 # address: "State University of New York College of Environmental Science and Forestry"
 phone: +1 315-345-4713
@@ -39,8 +39,6 @@ tribble(
 ```{r eval = TRUE}
 tribble(
   ~ When, ~ BeforeYou, ~ You, ~ AfterYou, ~ Title, ~ Details, ~ url,
-  "2024", "", "Johnson, L. K.,", "Domke, G. M., Stehman, S. V., Mahoney, M. J., Beier, C. M.", "From pixels to parcels: flexible practical small-area uncertainty estimation for spatial averages obtained from aboveground biomass maps.", "In review at Remote Sensing of Environment", "https://doi.org/10.48550/arXiv.2412.16403",
-  "2024", "", "Johnson, L. K.,", "Mahoney, M. J., Domke, G. M., and Beier, C. M.", "New allometric models for the USA create a step-change in forest carbon estimation, modeling, and mapping.", "In press at Forest Ecology and Management", "https://doi.org/10.48550/arXiv.2405.04507",
   "2023", "Mahoney, M.J., ", "Johnson, L.K.,", "Silge, J., Frick, H., Kuhn, M., and Beier, C. M.", "Assessing the performance of spatial cross-validation approaches for models of spatially structured data.", "In review at Environmental Modelling \\& Software", "https://doi.org/10.48550/arXiv.2303.07334",
   ) %>% 
   brief_entries(glue::glue("<BeforeYou>\\textbf{<You>} <AfterYou> <Title> <Details>. \\url{<url>}", 
@@ -50,13 +48,16 @@ tribble(
                 .protect = FALSE)
 ```
 
+
 ## Peer-Reviewed Journal Articles
 
 ```{r}
 tribble(
   ~ When, ~ BeforeYou, ~ You, ~ AfterYou, ~ Title, ~ Details, ~ url,
+    "2025", "", "Johnson, L. K.,", "Domke, G. M., Stehman, S. V., Mahoney, M. J., Beier, C. M.", "From pixels to parcels: flexible practical small-area uncertainty estimation for spatial averages obtained from aboveground biomass maps.", "Remote Sensing of Environment, 330, 114951", "https://doi.org/10.1016/j.rse.2025.114951",
   "2025", "", "Johnson, L. K.,", "Yang, Z., Erb, A., Bright, R. M., Domke, G. M., Frescino, T. S., Schaaf, C. B., Healey, S. P.", "Integrating albedo offsets in reforestation decisions for climate change mitigation outcomes in 2050: a case study in the USA.", "Forest Ecology and Management, 587, 122699", "https://doi.org/10.1016/j.foreco.2025.122699",
-  "2024", "Desrochers, M. L., Clippard, E. A., ", "Johnson, L. K.,", "and Beier, C. M. 2024.", "Declining trends in canopy disturbance across reserve forest landscapes of the northeastern US.", "Forest Ecology and Management, 578, 122463", "https://doi.org/10.1016/j.foreco.2024.122463",
+  "2025", "", "Johnson, L. K.,", "Mahoney, M. J., Domke, G. M., and Beier, C. M.", "New allometric models for the USA create a shift in forest carbon estimation, modeling, and mapping.", "Forest Ecology and Management, 589, 122751", "https://doi.org/10.1016/j.foreco.2025.122751",
+  "2025", "Desrochers, M. L., Clippard, E. A., ", "Johnson, L. K.,", "and Beier, C. M. 2024.", "Declining trends in canopy disturbance across reserve forest landscapes of the northeastern US.", "Forest Ecology and Management, 578, 122463", "https://doi.org/10.1016/j.foreco.2024.122463",
   "2024", "Cranmer, N., Han, T., Chedzoy, B., Smallidge, P. J., Beier, C. M., ", "Johnson, L. K.,", "and Xu, X. 2024.", "Estimating merchantable and non-merchantable wood volume in slash walls using terrestrial and airborne LiDAR.", "Forest Ecology and Management, 569, 122211", "https://doi.org/10.1016/j.foreco.2024.122211",
   "2023", "", "Johnson, L. K.,", "Mahoney, M. J., Desrochers, M. L., and Beier, C. M. 2023.", "Mapping historical forest biomass for stock-change assessments at parcel to landscape scales.", "Forest Ecology and Management, 546, 121348", "https://doi.org/10.1016/j.foreco.2023.121348",
   "2022", "Desrochers, M. L., Tripp, W., Logan, S., Bevilacqua, E., ", "Johnson, L.K.,", "and Beier, C. M. 2022.", "Ground-Truthing Forest Change Detection Algorithms in Working Forests of the US Northeast.", "Journal of Forestry, 120(5), 575–587", "https://doi.org/10.1093/jofore/fvab075",
@@ -226,8 +227,8 @@ tribble(
 
 tribble(
   ~ Group, ~ List,
-  "Programming", "R, Python, SQL, git, and Linux shell languages",
-  "GIS", "QGIS, ArcGIS, GDAL, Google Earth Engine, and the R spatial ecosystem"
+  "Programming", "R, Python, SQL, git, AWS, and Linux shell languages",
+  "GIS", "QGIS, ArcGIS, GDAL/OGR, PostGIS, Google Earth Engine, and the R spatial ecosystem"
   ) %>% 
 brief_entries(List, Group, .protect = FALSE)
 ```

@@ -53,14 +53,15 @@ make_detailed_section <- function(..., order = c(3, 2, 1, 4), detailVector = "De
 OSU <- vector("list")
 OSU$Details <- c("Postdoctoral Scholar", "August 2024 - Present", "Oregon State University", "Riverdale, UT")
 OSU$Bullets <- c(
-  "Developed a shiny-live web map to support the joint consideration of carbon benefits and albedo offsets in tree-planting projects across the conterminous United States",
-  "Decomposing Nepal-wide forest carbon trends with NASA GEDI data to distribute REDD+ payments"
+  "Developed an interactive web map to support the joint consideration of carbon benefits and albedo offsets in tree-planting projects across the conterminous United States",
+  # "Decomposing Nepal-wide forest carbon trends with NASA GEDI data to distribute REDD+ payments",
+  "Building tools for equitable distribution of REDD+ payments using NASA GEDI data and ML"
 )
 
 CAFRI <- vector("list")
 CAFRI$Details <- c("Research Assistant", "August 2019 - August 2024", "Climate and Applied Forest Research Institute", "Syracuse, NY")
 CAFRI$Bullets <- c(
-  "Developed a forest carbon mapping framework for the NYS DEC supporting net-zero emissions goals",
+  "Developed an ML-based forest carbon mapping framework for the NYS DEC",
   "Communicated research findings in 4 scientific manuscripts and 8 conference presentations",
   "Contributed writing, code, and statistical/spatial analysis to technical reports for external collaborators",
   "Implemented R workflows to process > 30 TB of LiDAR point clouds and ~2 TB of Landsat imagery",
@@ -131,7 +132,7 @@ make_detailed_section(code_for_btv, workshops)
 
 tribble(
   ~ Group, ~ List,
-  "Programming", "R, Python, Quarto, SQL, git, and Linux shell languages",
+  "Programming", "R, Python, SQL, git, AWS, and Linux shell languages",
   "GIS", "QGIS, ArcGIS, GDAL/OGR, PostGIS, Google Earth Engine, and the R spatial ecosystem"
   ) %>% 
 brief_entries(List, Group, .protect = FALSE)
