@@ -177,6 +177,9 @@ tribble(
 ```{r}
 tribble(
   ~ When, ~ Title, ~ Details,
+  "2025", "World Bank Workshop Leader:", "Enhancing Digital MRV Technologies and Capacities in Papua New Guinea",
+  "2025", "ESIP Lab Reviewer:", "Democratizing Geospatial AI/ML RFP",
+  "2025", "Reviewer:", "Environmental Monitoring and Assessment",
   "2024", "Reviewer:", "Carbon Balance and Management",
   "2023", "Reviewer:", "Forest Ecology and Management, Journal of Applied Earth Observation and Geoinformation, PNAS Nexus",
   "2023", "Workshop Assistant:", "Foundations of Scientific Computing at SUNY ESF",
