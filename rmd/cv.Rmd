@@ -177,6 +177,7 @@ tribble(
 ```{r}
 tribble(
   ~ When, ~ Title, ~ Details,
+  "2026", "Reviewer: Forest Ecology and Management",
   "2025", "World Bank Workshop Leader:", "Enhancing Digital MRV Technologies and Capacities in Papua New Guinea",
   "2025", "ESIP Lab Reviewer:", "Democratizing Geospatial AI/ML RFP",
   "2025", "Reviewer:", "Environmental Monitoring and Assessment, Remote Sensing in Ecology and Conservation",

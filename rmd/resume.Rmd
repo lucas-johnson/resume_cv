@@ -55,7 +55,8 @@ OSU$Details <- c("Postdoctoral Scholar", "August 2024 - Present", "Oregon State 
 OSU$Bullets <- c(
   "Developed an interactive web map to support the joint consideration of carbon benefits and albedo offsets in tree-planting projects across the conterminous United States",
   # "Decomposing Nepal-wide forest carbon trends with NASA GEDI data to distribute REDD+ payments",
-  "Building tools for equitable distribution of REDD+ payments using NASA GEDI data and ML"
+  "Building tools for equitable distribution of REDD+ payments using NASA GEDI data and ML",
+  "Supporting rapid assessment of salvagable timber resources following natural disasters"
 )
 
 CAFRI <- vector("list")
@@ -63,7 +64,7 @@ CAFRI$Details <- c("Research Assistant", "August 2019 - August 2024", "Climate a
 CAFRI$Bullets <- c(
   "Developed an ML-based forest carbon mapping framework for the NYS DEC",
   "Communicated research findings in 4 scientific manuscripts and 8 conference presentations",
-  "Contributed writing, code, and statistical/spatial analysis to technical reports for external collaborators",
+  "Contributed writing, code, and statistical/spatial analysis to technical reports",
   "Implemented R workflows to process > 30 TB of LiDAR point clouds and ~2 TB of Landsat imagery",
   "Established cloud computing infrastructure (AWS), geospatial databases, and data sharing software", 
   "Provided mentorship and technical support to grad students"
@@ -73,9 +74,7 @@ LK <- vector("list")
 LK$Details <- c("Data Engineer", "August 2017 - July 2019", "Lightkeeper, LLC", "Boston, MA")
 LK$Bullets <- c(
   "Refactored ETL pipeline, establishing best practices and standard tools for customer-specific scripts",
-  "Designed and developed internal tools to track feature usage and identify computational bottlenecks",
-  "Implemented slack integrations to streamline requests from client support team"
-)
+  "Designed and developed internal tools to track feature usage and identify computational bottlenecks")
 
 make_detailed_section(
   OSU,
