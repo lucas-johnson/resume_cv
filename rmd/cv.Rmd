@@ -162,7 +162,7 @@ tribble(
 ```{r}
 tribble(
   ~ When, ~ Group, ~ Details,
-  "2024 - Present", "Oregon State University", "\\textbf{Postdoctoral Scholar}. Investigating how surface albedo change resulting from forest growth, reforestation, and afforestation impact decisions around forest management for climate mitigation. Assisting in operationalizing forest carbon reporting tools that leverage data from NASA’s GEDI mission",
+  "2024 - Present", "Oregon State University", "\\textbf{Postdoctoral Scholar}. Investigating how surface albedo change resulting from forest growth, reforestation, and afforestation impact decisions around forest management for climate mitigation. Assisting in operationalizing forest carbon reporting tools that leverage data from NASA’s GEDI mission. Supporting rapid assessment of salvagable timber resources following natural disasters",
   "2019 - 2024", "Climate and Applied Forest Research Institute (SUNY ESF)", "\\textbf{Research Assistant}. Developed cloud computing infrastructure, geospatial databases, and data sharing software. Contributed writing, code, and statistical/spatial analysis to technical reports",
   "2017 - 2019", "Lightkeeper, LLC", "\\textbf{Data Engineer}. Developed internal data management tools and software in python", 
 ) %>% 
@@ -177,7 +177,7 @@ tribble(
 ```{r}
 tribble(
   ~ When, ~ Title, ~ Details,
-  "2026", "Reviewer: Forest Ecology and Management",
+  "2026", "Reviewer:", "Forest Ecology and Management",
   "2025", "World Bank Workshop Leader:", "Enhancing Digital MRV Technologies and Capacities in Papua New Guinea",
   "2025", "ESIP Lab Reviewer:", "Democratizing Geospatial AI/ML RFP",
   "2025", "Reviewer:", "Environmental Monitoring and Assessment, Remote Sensing in Ecology and Conservation",
@@ -201,7 +201,10 @@ tribble(
   ~ When, ~ Group, ~ Role, ~ Details,
   "July 2020 - July 2021", "Code for Burlington - Courtbot Project", 
   "Technical Lead (Volunteer)", 
-  "A free service providing text message notifications for court appearances"
+  "A free service providing text message notifications for court appearances",
+  "January 2026 - Present", "Guadalupe Center, SLC",
+  "Learning Coach (Volunteer)", 
+  "Weekly English tutoring for small groups of adult immigrants and refugees"
 ) %>% 
   brief_entries(glue::glue(" \\textbf{<Group>} <Role>. \\newline{} <Details>",
                            .open = "<", 
