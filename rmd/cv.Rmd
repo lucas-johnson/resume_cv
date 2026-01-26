@@ -25,7 +25,7 @@ library(vitae)
 library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where, ~ Details,
-    "Doctor of Philosophy in Environmental Science", "Aug 2019 - May 2024", "State University College of Environmental Science and Forestry", "Syracuse, New York", "Dissertation: \\textit{Mapping forest aboveground biomass stocks and changes to facilitate natural climate solutions in New York State}",
+    "Doctor of Philosophy in Environmental Science", "Aug 2019 - May 2024", "SUNY College of Environmental Science and Forestry", "Syracuse, New York", "Dissertation: \\textit{Mapping forest aboveground biomass stocks and changes to facilitate natural climate solutions in New York State}",
   "Bachelor of Science in Computer Science", "Aug 2013 - May 2017", "Tufts University", "Boston, Massachusetts", NA
 
 ) %>% 
